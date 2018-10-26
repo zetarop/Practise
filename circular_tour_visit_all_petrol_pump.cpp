@@ -30,13 +30,13 @@ int count(int n, int C, int A[], int B[])
 		return 0;
 
 	int ans=1;
-	need[start+n]=100;
+	need[start+n]=0;
 
 	for(int i=1;i<n;i++)
 	{
 		int k = start+n-i;
-		need[k] = max(100, need[k+1] + B[k] - min(C,A[k]));
-		if(need[k] == 100)
+		need[k] = max(0, need[k+1] + B[k] - min(C,A[k]));
+		if(need[k] == 0)
 			ans++;
 	}
   
