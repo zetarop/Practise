@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//O(n) time | O(n) space
 int minimumNumberOfSwaps(string S){
     
     vector<int> obi; // opening bracket index
